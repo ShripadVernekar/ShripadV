@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html> 
+<head> 
+  <title>E-commerce Web</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="CSS/In_shop.css">
+
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
+  
+</head> 
+
+<body > 
+    <div class="main">
+
+    <div class="custom-padding">
+        <nav>
+              <div class="logo"><img src="CSS/smile.jfif" width="30px" height="30px"></div>
+                  <ul class="menu-area">
+                     <li><a href="index.html"><i class="fa fa-home" aria-hidden="true">Home</i></a></li>
+                     <li><a href="#"><i class="fa fa-question" aria-hidden="true">Help</i></a></li>
+                     <li><a href="categories.html"><i class="fa fa-arrow-circle-left">Back</i></a></li>
+                     <li><a href="logout.php"><i class="fa fa-caret-down" aria-hidden="true">Sign out</i></a></li>
+                    </ul>
+                 
+              </div>
+            </nav>
+          </div>
+   
+   <div class="wrapper">
+     <input type="text" name="mytext" class="input" id="mytext" placeholder="what are you looking for?" autofocus required>
+     <div class="searchbtn"> 
+        <i class="fa fa-search" aria-hidden="true"></i>
+     </div>
+   </div> 
+
+   <div >
+    <button class="flipkart" id="btn" onclick="Flipkart()" value="Flipkart"><img src="CSS/flip.jpg" alt="Flipkart" width="80px" height="60px" class="flip"></button>
+
+    <button class="amazon" id="bnt" type="button" name="bnt" onclick="Amazon()" value="Amazon"><img src="CSS/ama.jpg" alt="Amazon" width="80px" height="60px" class="flip"></button>
+
+    <button class="snap" id="bnt" type="button" name="bnt" onclick="Snapdeal()" value="Snapdeal"><img src="CSS/snap.jpg" alt="Snapdeal" width="80px" height="60px" class="flip"></button>
+
+    <button class="myn" id="bnt" type="button" name="bnt" onclick="Myntra()" value="Myntra"><img src="CSS/myn.jpg" alt="Myntra" width="80px" height="60px" class="flip"></button>
+
+     <button class="ebay" id="bnt" type="button" name="bnt" onclick="Ebay()" value="Ebay"><img src="CSS/ebay.jpg" alt="Ebay" width="80px" height="60px" class="flip"></button>
+
+     <button class="jab" id="bnt" type="button" name="bnt" onclick="Jabong()" value="Ebay"><img src="CSS/jab.jpg" alt="Ebay" width="80px" height="60px" class="flip"></button>
+
+  </div>
+  </div> 
+  <script>
+    
+    function Flipkart(){
+      
+      if (document.getElementById('mytext').value==='')
+      {
+        alert("Please the particulars in the search box");
+        return false;
+      }
+      else{
+      var x="https://www.flipkart.com/search?q=" + document.getElementById('mytext').value;
+
+      window.open(x,"_blank");
+    }
+  }
+
+    function Amazon(){
+      
+      if (document.getElementById('mytext').value==='')
+      {
+        alert("Please the particulars in the search box");
+        return false;
+      }
+      else{
+      var q="https://www.amazon.in/s?k="+ document.getElementById('mytext').value;
+      window.open(q,"_blank");
+      }
+    }
+
+   function Snapdeal(){
+     
+    if (document.getElementById('mytext').value==='')
+      {
+        alert("Please the particulars in the search box");
+        return false;
+      }
+      else{
+      var q="https://www.snapdeal.com/search?keyword="+ document.getElementById('mytext').value;
+      window.open(q,"_blank");
+    }
+  }
+
+    function Myntra(){
+      if (document.getElementById('mytext').value==='')
+      {
+        alert("Please the particulars in the search box");
+        return false;
+      }
+      else{
+      var q="https://www.myntra.com/"+ document.getElementById('mytext').value;
+      window.open(q,"_blank");
+    }
+  }
+
+
+    function Ebay(){
+    if (document.getElementById('mytext').value==='')
+      {
+        alert("Please the particulars in the search box");
+        return false;
+      }
+      else{
+      var q="https://www.ebay.com/"+ document.getElementById('mytext').value;
+      window.open(q,"_blank");
+    }
+  }
+
+    function Jabong(){
+      if (document.getElementById('mytext').value==='')
+      {
+        alert("Please the particulars in the search box");
+        return false;
+      }
+      else{
+      var q="https://www.jabong.com/find/"+ document.getElementById('mytext').value;
+      window.open(q,"_blank");
+    }
+  }
+    
+</script>
+
+<footer class="mainfooter" role="contentinfo">
+    <div class="footer-middle">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <!--Column1-->
+          <div class="footer-pad">
+                <h4></h4>
+                <ul class="list-unstyled">
+          
+        <ul class="list-unstyled">
+              <li><a href="#"></a></li>
+              <li><a href="#">Accessibility</a></li>
+              <li><a href="#">Disclaimer</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+        </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <!--Column1-->
+          <div class="footer-pad">
+            <h4></h4>
+            <ul class="list-unstyled">
+              <li><a href="#">Help desk</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="Contact.html">Contact Us</a></li>
+              
+            </ul>
+          </div>
+        </div>
+       
+          <div class="col-md-3">
+                <h4>Follow Us</h4>
+              <ul class="social-network social-circle">
+                  
+               <li><a href="https://www.facebook.com/" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="https://www.linkedin.com/" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://www.twitter.com/" class="icoFacebook" title="twitter"><i class="fa fa-twitter"></i></a></li>
+              </ul>				
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12 copy">
+              <p class="text-center">&copy; Copyright 2019- Multi Web.  All rights reserved.</p>
+          </div>
+      </div>
+  
+  
+    </div>
+    </div>
+  </footer>
+</div>
+
+</body> 
+
+</html> 

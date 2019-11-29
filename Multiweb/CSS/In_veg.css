@@ -1,0 +1,350 @@
+
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Comfortaa',cursive;
+}
+
+body{
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-image: url(foodbck.jpg);
+}
+
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(0,0,0,0.6);
+    max-width: 550px;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper .input{
+    width: 85%;
+    padding: 15px 20px;
+    border:none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.searchbtn{
+    background: darkgrey;
+    width: 10%;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.searchbtn .fa{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 18px;
+}
+
+.zomato{
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    /* background-color:; */
+    border-radius: 20%;
+    border-width: 15%;
+    padding: 5px;
+}
+.swiggy{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    background-color:rgb(255, 165, 0);
+    border-radius: 30px;
+    border-width: 15%;
+     padding: 5px;
+}
+
+.ubereats{
+  position: absolute;
+  top: 65%;
+  left: 60%;
+  transform: translate(-50%,-50%);
+  font-size: 20px;
+  /*background-color:rgb(59, 58, 58);*/
+  border-radius: 30px;
+  border-width: 15%;
+   padding: 5px;
+
+}
+
+.zomato:hover{
+      width: 150px;
+      height:90px;
+      border-radius: 10px;
+      
+    }
+
+.swiggy:hover{
+      width: 150px;
+      height:90px;
+      border-radius: 10px;
+      
+    }
+
+.ubereats:hover{
+      width: 150px;
+      height:90px;
+      border-radius: 10px;
+      
+    }
+.custom-padding{
+    padding-top: 5px;
+  }    
+     
+
+    .logo {
+      width: 15%;
+      float: left;
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 25px;
+      text-align: left;
+      padding-left: 2%;
+    }
+    
+    
+    
+    .containr{
+        width: 90%;
+        margin: 0 auto; /* Center the DIV horizontally */
+    }
+    nav {
+      position: relative;
+      width: calc(100% - 60px);
+      margin: 0 auto;
+      padding: 5px 0;
+      background: dimgrey;
+      z-index: 1;
+      text-align: right;
+      padding-right: 2%;
+    }
+    nav a:hover{
+        background-color: black;
+    }
+    nav img{
+        border-radius: 20%;
+        width: 45px;
+        height: 45px;
+    }
+    .menu-area li a {
+      text-decoration: none;
+    }
+    .menu-area li {
+      list-style-type: none;
+    }
+
+
+    .menu-area li {
+      display: inline-block;
+    }
+    
+    .menu-area a {
+      color: #fff;
+      font-weight: 300;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      display: block;
+      padding: 0 25px;
+      font-size: 14px;
+      line-height: 30px;
+      position: relative;
+      z-index: 1;
+    }
+    .menu-area a:hover {
+      background: tomato;
+      color: #fff;
+    }
+    
+    .menu-area a:hover:after {
+      transform: translateY(-50%) rotate(-35deg);
+    }
+    
+    nav:before {
+      position: absolute;
+      content: '';
+      border-top: 10px solid #808080;
+      border-right: 10px solid #808080;
+      border-left: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      top: 100%;
+      left: 0;
+    }
+    
+    nav:after {
+      position: absolute;
+      content: '';
+      border-top: 10px solid #808080;
+      border-left: 10px solid #808080;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      top: 100%;
+      right: 0;
+    }
+    
+    
+    .containr a{
+        text-emphasis-color: black;
+        float: right;
+    }
+
+    .containr a:hover{
+        background-color: black;
+        
+    }
+
+    
+
+    footer {
+        background: #16222A;
+        background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+        background: linear-gradient(59deg, #3A6073, #16222A);
+        color: white;
+        margin-top:650px;
+      }
+      
+      
+      footer a {
+        color: #fff;
+        font-size: 14px;
+        transition-duration: 0.2s;
+      }
+      
+      footer a:hover {
+        color: #FA944B;
+        text-decoration: none;
+      }
+      
+      .copy {
+        font-size: 12px;
+        padding: 10px;
+        border-top: 1px solid #FFFFFF;
+      }
+      
+      .footer-middle {
+        padding-top: 2em;
+        color: white;
+      }
+      
+      
+      /*SOCİAL İCONS*/
+      
+      /* footer social icons */
+      
+      ul.social-network {
+        list-style: none;
+        display: inline;
+        margin-left: 0 !important;
+        padding: 0;
+      }
+      
+      ul.social-network li {
+        display: inline;
+        margin: 0 5px;
+      }
+      
+      
+      /* footer social icons */
+      
+      .social-network a.icoFacebook:hover {
+        background-color: #3B5998;
+      }
+      
+      .social-network a.icoLinkedin:hover {
+        background-color: #007bb7;
+      }
+      
+      .social-network a.icoFacebook:hover i,
+      .social-network a.icoLinkedin:hover i {
+        color: #fff;
+      }
+      
+      .social-network a.socialIcon:hover,
+      .socialHoverClass {
+        color: #44BCDD;
+      }
+      
+      .social-circle li a {
+        display: inline-block;
+        position: relative;
+        margin: 0 auto 0 auto;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+      }
+      
+      .social-circle li i {
+        margin: 0;
+        line-height: 30px;
+        text-align: center;
+      }
+      
+      .social-circle li a:hover i,
+      .triggeredHover {
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -ms--transform: rotate(360deg);
+        transform: rotate(360deg);
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        transition: all 0.2s;
+      }
+      
+      .social-circle i {
+        color: #595959;
+        -webkit-transition: all 0.8s;
+        -moz-transition: all 0.8s;
+        -o-transition: all 0.8s;
+        -ms-transition: all 0.8s;
+        transition: all 0.8s;
+      }
+      
+      .social-network a {
+        background-color: #F9F9F9;
+      }
+      
+      
+
+    @media (hover: none) { 
+  .location-title {
+    opacity: 1;
+  }
+  .location-image img {
+    filter: blur(2px);
+  }
+}
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .main  {
+    width: 100%;
+  }
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link rel="stylesheet" href="CSS/In_veg.css">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+            <meta charset="UTF-8">
+            <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+                  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+                  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+        <style>
+            .col-md-3 .h4{
+      text-emphasis-color:rgb(185, 123, 8);
+
+    }
+     </style>
+    
+    </head>
+    <body>
+         <div class="main">
+            <div class="custom-padding">
+                    <nav>
+                          <div class="logo"><img src="CSS/smile.jfif" width="30px" height="30px"></div>
+                              <ul class="menu-area">
+                                 <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"><b>Home</b></i></a></li>
+                                 <li><a href="#"><i class="fa fa-question" aria-hidden="true"><b>Help</b></i></a></li>
+                                 <li><a href="categories.html"><i class="fa fa-arrow-circle-left">Previous</i></a></li>
+                                 <li><a href="logout.php"><i class="fa fa-caret-down" aria-hidden="true"><b>Sign out</b></i></a></li>
+                                </ul>
+                             
+                          </div>
+                        </nav>
+                     
+               
+             
+     
+        <div class="wrapper">
+                <input type="text" class="input" id="text" placeholder="what are you looking for?" autofocus required>
+                <div class="searchbtn"> 
+                   <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+        </div>
+              <div>
+               <button class="zomato" id="btn" onclick="zomato()" value="Zomato"><img src="CSS/zomato.jpg" alt="Zomato" width="80px" height="60px" class="flip"></button>
+               <button class="swiggy" id="bnt" type="button" name="bnt" onclick="swiggy()" value="Swiggy"><img src="CSS/swiggy.jpg" alt="Swiggy" width="80px" height="60px" class="flip"></button>
+               <button class="ubereats" id="nbt" type="button" name="bnt" onclick="ubereats()" value="Ubereats"><img src="CSS/uber.jpg" alt="Ubereats" width="80px" height="60px" class="flip"></button>
+             </div>
+            </div> 
+             <script>
+               // var z="https://www.zomato.com/bangalore/order-food-online?delivery_subzone=";
+               // var y="https://www.swiggy.com/search?q=";
+               // var c="https://www.ubereats.com/en-US/?userQuery=";
+           
+               function zomato(){
+                if (document.getElementById('text').value==='')
+                {
+                 alert("Please the particulars in the search box");
+                 return false;
+                 }
+             else{
+                 var x="https://www.zomato.com/bangalore/order-food-online?delivery_subzone=" + document.getElementById('text').value;
+           
+                 window.open(x,"_blank");
+               }
+              }
+               function swiggy(){
+                if (document.getElementById('text').value==='')
+      {
+        alert("Please the particulars in the search box");
+        return false;
+      }
+      else{
+                 var q="https://www.swiggy.com/search?q="+ document.getElementById('text').value;
+                 window.open(q,"_blank");
+               }
+              }
+               function ubereats(){
+                if (document.getElementById('text').value==='')
+      {
+        alert("Please the particulars in the search box");
+        return false;
+      }
+      else{
+                var p="https://www.ubereats.com/en-US/search/?pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMkJlbmdhbHVydSUyMiUyQyUyMnJlZmVyZW5jZSUyMiUzQSUyMkNoSUpiVTYweVhBV3Jqc1I0RTktVWVqRDNfZyUyMiUyQyUyMnJlZmVyZW5jZVR5cGUlMjIlM0ElMjJnb29nbGVfcGxhY2VzJTIyJTJDJTIybGF0aXR1ZGUlMjIlM0ExMi45NzE3MzYxJTJDJTIybG9uZ2l0dWRlJTIyJTNBNzcuNTk1MDkzOCU3RA%3D%3D&q="+ document.getElementById('text').value;
+                 window.open(p,"_blank");
+               }
+           }
+              // function amzlogo(){
+                // document.getElementById("bnt").style.backgroundImage="url(C:/Users/Lenovo/Pictures/bhim.jfif)";
+               //}
+               
+           
+               
+           </script>
+           
+
+           
+           <footer class="mainfooter" role="contentinfo">
+               <div class="footer-middle">
+               <div class="container">
+                 <div class="row">
+                   <div class="col-md-3 col-sm-6">
+                     <!--Column1-->
+                     <div class="footer-pad">
+                           <h4></h4>
+                           <ul class="list-unstyled">
+                     
+                   <ul class="list-unstyled">
+                         <li><a href="#"></a></li>
+                         <li><a href="#">Accessibility</a></li>
+                         <li><a href="#">Disclaimer</a></li>
+                         <li><a href="#">Privacy Policy</a></li>
+                         <li><a href="#">FAQs</a></li>
+                       </ul>
+                   </div>
+                   </div>
+                   <div class="col-md-3 col-sm-6">
+                     <!--Column1-->
+                     <div class="footer-pad">
+                       <h4></h4>
+                       <ul class="list-unstyled">
+                         <li><a href="#">Help desk</a></li>
+                         <li><a href="#">About Us</a></li>
+                         <li><a href="Contact.html">Contact Us</a></li>
+                         
+                       </ul>
+                     </div>
+                   </div>
+                  
+                     <div class="col-md-3">
+                           <h4>Follow Us</h4>
+                         <ul class="social-network social-circle">
+                             
+                          <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                          <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                          <li><a href="#" class="icoFacebook" title="twitter"><i class="fa fa-twitter"></i></a></li>
+                         </ul>				
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-md-12 copy">
+                         <p class="text-center">&copy; Copyright 2019- Multi Web.  All rights reserved.</p>
+                     </div>
+                 </div>
+             
+             
+               </div>
+               </div>
+             </footer>
+           
+        </div>
+   </body>
+</html>
+
+
+
+
+
+
+
+
+

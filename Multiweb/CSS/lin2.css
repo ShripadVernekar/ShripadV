@@ -1,0 +1,116 @@
+
+body {/*font-family: Arial, Helvetica, sans-serif;
+  text-align: center;*/
+  
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-image:url("bg.jpg");
+  background-position:top;}
+* {box-sizing: border-box}
+form{
+  display: inline-block;
+}
+input[type=text], input[type=password] {
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+display: inline-block;
+border: none;
+background: #f1f1f1;
+align-content: center;
+border-radius: 1em;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+background-color: #ddd;
+outline: none;
+
+}
+
+hr {
+border: 1px solid #f1f1f1;
+margin-bottom: 25px;
+}
+
+
+button {
+background-color: #4CAF50;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+opacity: 0.9;
+border-radius: 2em;
+}
+
+button:hover {
+opacity:5;
+
+}
+
+
+.cancelbtn {
+padding: 14px 20px;
+background-color: #f44336;
+}
+
+
+.cancelbtn, .signinbtn {
+float: left;
+width: 50%;
+}
+
+
+.container {
+  width:100%;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:400px;
+  height:px;
+  box-sizing:border-box;
+  max-width:40rem;
+  position:absolute;
+  background:rgba(0,0,0,0.5);
+  padding:45px;
+  
+  border-radius:2rem;
+   z-index:1;
+  display:inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  
+}
+
+
+.clearfix::after {
+content: "";
+clear: both;
+display: table;
+}
+h1{
+  margin:0;
+  padding:0 0 20px;
+  font-weight:bold;
+  color:#ffffff;
+}
+p{
+  color:#ffffff;
+}
+b{
+  color:#ffffff;
+}
+
+@media screen and (max-width: 300px) {
+.cancelbtn, .signupbtn {
+   width: 100%;
+}
+}
+.remember
+{
+  
+  color: grey;
+}

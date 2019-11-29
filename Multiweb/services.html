@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title >our service section</title>
+  <link rel="stylesheet" type="text/css" href="CSS/services.css">
+       <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  -->
+</head>
+<body>
+  <div class="main">
+	<div class="custom-padding">
+  <nav>
+    <div class="logo">Multiweb</div>
+
+    <ul class="menu-area">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="About_us.html">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="logout.php">Signout</a></li>
+    </ul>
+    </div>
+  </nav>
+
+</div>
+	
+ <div class="about">
+  <div class="container">
+    <div class="box">
+      <h2>01</h2>
+      <h3><a href="#">E-commerce</a></h3>
+      <p>Want to search something...</p>
+
+    </div>
+
+    <div class="box">
+      <h2> 02</h2>
+
+      <h3><a href="#">Order food</a></h3>
+      <p>Wanna buy some products </p>
+
+    </div>
+    <div class="box">
+      <h2>03</h2>
+      <h3><a href="#">Health Care</a></h3>
+      <p>Any health issues? check here for some suggestions</p>
+
+    </div>
+    <div class="box">
+      <h2>04</h2>
+      <h3><a href="#">Agriculture</a></h3>
+      <p>Any queires related to agri!? Here you go..</p>
+
+    </div>  
+  </div>
+ </div>
+<script>
+  $(function(){
+    var includes = $('[data-include]');
+    jQuery.each(includes, function(){
+      var file = 'views/' + $(this).data('include') + '.html';
+      $(this).load(file);
+    });
+  });
+</script>
+</div>
+<div data-include="footer"></div>
+
+</body>
+</html>
