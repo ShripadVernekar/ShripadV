@@ -1,0 +1,7 @@
+
+I have implemented 3 jug problem using the data structure concept of state-space search and backtracking , structures.We have initial(set) state and final(goal) state.To reach final state, state space search is used.Since 6 transitions are required so 6 transition functions are to generate state.
+
+gcc A3_client_PES1201801932.c A3_impl_PES1201801932.c
+./a.out < input.txt
+
+Learnt the concept of backtracking and state space search,use of doubly linked lists for solving the problems  
